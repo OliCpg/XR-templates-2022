@@ -1,0 +1,140 @@
+{
+  "title": "Test scenario",
+  "version":  1,
+  "elements": [
+    {
+      "id": 1,
+      "objectName": "barrel 1",
+      "type": "item",
+      "requiredIds": []
+    },
+    {
+      "id": 2,
+      "objectName": "crate 1",
+      "type": "item",
+      "requiredIds": []
+    },
+    {
+      "id": 3,
+      "objectName": "cart 1",
+      "type": "item",
+      "requiredIds": []
+    },
+    {
+      "id": 4,
+      "objectName": "barricadeDrop 1",
+      "type": "dropzone_trigger",
+      "requiredIds": [ 1, 2, 3 ]
+    },
+    {
+      "id": 5,
+      "objectName": "animationManager",
+      "type": "animation",
+      "payLoad": "animation_porte",
+      "requiredIds": [ 4 ]
+    },
+    {
+      "id": 6,
+      "objectName": "areaCourtine",
+      "type": "area_trigger",
+      "requiredIds": [ 5 ]
+    },
+    {
+      "id": 7,
+      "objectName": "animationManager",
+      "type": "animation",
+      "payLoad": "animation_chateau1",
+      "requiredIds": [ 6 ]
+    },
+    {
+      "id": 8,
+      "objectName": "areaPosteDeTir",
+      "type": "area_trigger",
+      "requiredIds": [ 7 ]
+    },
+    {
+      "id": 9,
+      "objectName": "animationManager",
+      "type": "animation",
+      "payLoad": "animation_chateau2",
+      "requiredIds": [ 8 ]
+    },
+    {
+      "id": 10,
+      "objectName": "areaPorteGrandeTour",
+      "type": "area_trigger",
+      "requiredIds": [ 9 ]
+    },
+    {
+      "id": 11,
+      "objectName": "animationManager",
+      "type": "animation",
+      "payLoad": "animation_tour1",
+      "requiredIds": [ 10 ]
+    },
+    {
+      "id": 12,
+      "objectName": "poutre 1",
+      "type": "item",
+      "requiredIds": []
+    },
+    {
+      "id": 13,
+      "objectName": "poutre 2",
+      "type": "item",
+      "requiredIds": []
+    },
+    {
+      "id": 14,
+      "objectName": "porte detruite",
+      "type": "item",
+      "requiredIds": [ 12, 13 ]
+    },
+    {
+      "id": 15,
+      "objectName": "porte tour",
+      "type": "door",
+      "requiredIds": [ 12, 13, 14 ]
+    },
+    {
+      "id": 16,
+      "objectName": "animationManager",
+      "type": "animation",
+      "payLoad": "animation_tour2",
+      "requiredIds": [ 15 ]
+    },
+    {
+      "id": 17,
+      "objectName": "areaInterieurGrandeTour",
+      "type": "area_trigger",
+      "requiredIds": [ 15 ]
+    },
+    {
+      "id": 18,
+      "objectName": "animationManager",
+      "type": "animation",
+      "payLoad": "animation_tour3",
+      "requiredIds": [ 17 ]
+    },
+    {
+      "id": 19,
+      "objectName": "areaSommetGrandeTour",
+      "type": "area_trigger",
+      "requiredIds": [ 17 ]
+    },
+    {
+      "id": 20,
+      "objectName": "animationManager",
+      "type": "animation",
+      "payLoad": "animation_dames",
+      "requiredIds": [ 19 ]
+    },
+    {
+      "id": 21,
+      "objectName": "animationManager",
+      "type": "animation",
+      "payLoad": "animation_prologue",
+      "requiredIds": [ 20 ]
+    }
+  ]
+}
